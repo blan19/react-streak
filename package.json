@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "react simple streak component",
   "main": "index.js",
+  "type": "module",
   "author": "@blan19",
   "scripts": {
     "test": "vitest",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build": "tsc && vite build"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "streak"
+  ],
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
@@ -25,12 +30,17 @@
     "@storybook/react": "^8.0.5",
     "@storybook/react-vite": "^8.0.5",
     "@storybook/test": "^8.0.5",
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24",
+    "@vitejs/plugin-react-swc": "^3.6.0",
     "eslint": "^8.57.0",
     "eslint-plugin-storybook": "^0.8.0",
     "prettier": "^3.2.5",
     "prop-types": "^15.8.1",
     "storybook": "^8.0.5",
     "vite": "^5.2.7",
+    "vite-plugin-dts": "^3.8.1",
+    "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^1.4.0"
   },
   "peerDependencies": {
