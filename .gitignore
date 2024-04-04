@@ -35,6 +35,8 @@ typings/
 # build output
 lib/
 esm
+dist
+tsconfig.tsbuildinfo
 
 # storybook
 *storybook.log
